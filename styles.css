@@ -1,0 +1,626 @@
+body{
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  text-transform: none;
+  font-size: 18px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  background-color: #f1eeee;
+  color: #090909;  
+}
+
+div {
+  box-sizing: border-box;
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+
+  a {
+    color: #343434;
+    text-decoration: underline;
+    box-shadow: none;
+  }
+
+  a:hover{
+    color: #ff8a00;
+  }
+
+/* Navigation */
+.navbar {
+  font-size: 18px;
+  background-color: #eeeeee;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding-bottom: 10px;
+}
+
+.navbar a {
+  text-decoration: none;
+}
+
+.main-nav {
+  list-style-type: none;
+  display: none;
+}
+
+.nav-links,
+.logo {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.main-nav li {
+  text-align: center;
+  margin: 15px auto;
+  display: block;
+  line-height: 2em;
+  padding: 0.5em 1em;
+}
+
+.logo {
+  display: inline-block;
+  font-size: 22px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.navbar-toggle {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 24px;
+}
+
+.active {
+  display: block;
+}
+
+.nav-sub {
+  color: #C5B234;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* .dropdown:after {
+  content: "";
+  display: table;
+  clear: both;
+} */
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  /* color: inherit; */
+  padding: 5px; 
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  /* color: black; */
+  /* padding: 12px 16px; */
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content {
+  display: block;
+}
+
+@media screen and (min-width: 770px) {
+  /* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+  .navbar {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 0;
+      height: 70px;
+      align-items: center;
+  }
+
+  .main-nav {
+      display: flex;
+      margin-right: 30px;
+      flex-direction: row;
+      justify-content: flex-end;
+      padding-top: 20px;
+  }
+
+  .main-nav li {
+      margin: 0;
+  }
+
+  .nav-links {
+      margin-left: 40px;
+  }
+
+  .logo {
+      margin-top: 0;
+  }
+
+  .navbar-toggle {
+      display: none;
+  }
+
+  .logo:hover,
+  .nav-links:hover {
+      color: rgba(255, 255, 255, 1);
+  }
+}
+/* Site CSS */
+
+  .bigText{
+    font-weight: 700;
+    font-size: 5rem; 
+    line-height: 5.5rem;
+    letter-spacing: -2.3px;
+  }
+
+  
+
+h1, h2, h3, h4 {
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  /* scale: 1.5; */
+  margin-bottom: 3rem;
+  margin-top: 2rem;
+  font-size: 3.5em;
+  margin: 0.67em 0;
+  font-weight: 600;
+  color: #222;
+  padding-bottom: 10px;
+  line-height: 4rem;
+  letter-spacing: -2.3px;
+}
+
+/* h2 {
+  line-height: 1;
+  font-size: 2.5rem;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  color: #222;
+  font-weight: 400;
+} */
+
+
+h2 {
+	font-size: 2em;
+	font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+h3 {
+  font-weight:600;
+  margin-top: 1.5rem;
+  font-size: 1.5em;
+}
+
+h4 {
+  margin-top: 1rem;
+}
+
+.BodyContent {
+  margin-left: auto;
+  margin-right: auto;
+  /*padding-left: 10px;
+  padding-right: 10px;
+   max-width: 48em; 
+  padding-bottom: 30px;*/
+
+}
+
+
+.Column {
+  /* max-width: 60em; */
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 50px;
+}
+
+.MainContent {
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  max-width: 60em;
+  padding-bottom: 20px;
+
+}
+
+.FullWidthContent {
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 10px;
+	padding-right: 10px;
+	/* max-width: 100%; */
+	padding-bottom: 50px;
+	background-color: #d6d6d6;
+  }
+  
+
+
+ol, ul, dl {
+    padding-left: 1.375em;
+    margin-left: 1.375em;
+    }
+
+
+.Footer {
+  /* max-width: 48em; */
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 20px;
+  background-color: #000;
+}
+
+.Footer:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.footer-content{
+  text-align: center !important;
+  font-size: 0.75em;
+  color: #939393;
+}
+
+.copyright-bar {
+  /* float: left;
+  margin-left: 30px; */
+}
+
+.bottom-links-menu {
+  /* text-align: right;
+  float: right; */
+  font-size: 14px;
+}
+
+.bottom-links-menu ul {
+  display: flex;
+  margin-right: 30px;
+  flex-direction: row;
+  justify-content: flex-end;
+  list-style: none;
+}
+
+.bottom-links-menu a {
+  /* margin-left: 20px; */
+  color: #fff;
+}
+
+
+.u-textCenter {
+  text-align: center !important;
+}
+
+.u-textLeft {
+  text-align: left !important;
+}
+
+.u-textRight {
+  text-align: right !important;
+}
+
+
+ul {
+  list-style: disc;
+}
+
+.social-holder {
+  margin-top: 20px;
+}
+
+.social {
+  margin-left: 20px;
+  color: #222;
+}
+
+.social :hover {
+  color: #0f8e08;
+}
+
+.MainStripe1 {
+  /* max-width: 48em; */
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  /* padding-left: 50px;
+  padding-right: 50px; 
+  */
+  background-color: #eeeeee;
+}
+
+
+.button, button {
+  background:#424743;
+  color: #fff;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 3px;
+  font-size: 15px;
+  /* font-weight: bold; */
+  text-decoration: none;
+  cursor: pointer;
+  border:none;
+  padding: 12px 24px;
+  text-align: center !important;
+  overflow-wrap: break-word;
+  display: inline-block;
+}
+
+.button:hover, button:hover {
+  border: none;
+  background:#666;
+  color: #f9f9f9;
+  box-shadow: 0px 0px 1px #777;
+}
+
+.goldbutton {
+  background:#ff8a00;
+  color: #222;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 3px;
+  font-size: 1.2em;
+  /* font-weight: bold; */
+  text-decoration: none;
+  cursor: pointer;
+  border:none;
+  padding: 12px 24px;
+  text-align: center !important;
+  overflow-wrap: break-word;
+  display: inline-block;
+}
+
+.goldbutton:hover {
+  border: none;
+  color: #000;
+  box-shadow: 0px 0px 1px #777;
+}
+
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+
+  .bgimgs {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s; */
+    padding: 0px 0px 0px 0px;
+    min-width: 50%;
+    position: relative;
+    display: flex;
+    background-position: 50%;
+    /* background-size: 100%; */
+    /* align-content: center;
+    align-items: center; */
+    min-height: 500px;
+  }
+  
+  .bgimg1 {
+    background-image: url(images/woman-gym-dumbbell-row.jpg);
+  }
+  
+  .bgimg2 {
+    background-image: url(images/woman-barbell-squat.jpg);
+  }
+  
+  .bgimg3 {
+    background-image: url(images/woman-barbell-press-1000w.jpg);
+  }
+
+  .copyright-bar {
+    float: left;
+    margin-left: 30px;
+  }
+  
+  .bottom-links-menu {
+    text-align: right;
+    font-size: 14px;
+    float: right;
+  }
+
+  .bottom-links-menu li {
+    margin-left: 20px; 
+  }
+
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.row1::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+  /* border: 1px solid red; */
+}
+
+
+p {
+	margin-bottom: 1.5em;
+}
+
+.icon {
+	max-width: 30%;
+}
+
+.TestOverlay {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/barbell-clip-fix_1920.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+	background-size: cover;
+	/* transition: background .3s,border .3s,border-radius .3s,box-shadow .3s; */
+    padding: 90px 0px 90px 0px;
+}
+
+.Hero {
+  background-position: center;
+  background-repeat: no-repeat;
+	background-size: cover;
+	/* transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s; */
+  padding: 120px 10px 120px 10px;
+  position: relative;
+  text-align: center!important;
+}
+
+.Hero h1 {
+  color: #ffffff;
+}
+
+.Hero h2 {
+  color: #ffffff;
+}
+
+
+.whiteWords {
+	color: white;
+}
+
+hr.style1 {
+	text-align: center;
+	/* margin-top: 30px;*/
+	margin: 0 auto 30px;
+	border-style: solid;
+	border-color: #7d8c92;
+	border-top: 1px;
+	width: 6%;
+}
+
+img {
+  margin: 0;
+}
+
+.img_ss {
+  width: 50%;
+}
+
+.ash-form {
+  background-color: #e5eaec;
+  border: 3px solid #d6dee1;
+  color: #333;
+  padding: 10px;
+}
+
+textarea {
+  height: 200px;
+  width: 100%;
+}
+
+input {
+  width: 100%;
+}
+
+.bggold {
+  background-color: #C5B234;
+}
+
+.bgsilver {
+  background-color: silver;
+}
+
+.bgbronze {
+  background-color: #ba8728;
+}
+
+.HomeHero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/woman-heavy-barbell.jpg);
+}
+
+.WWDHero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/barbell-clip-fix_1920.jpg);
+}
+
+.ContactHero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/EHPT_Logov00.07.png);
+}
+
+.AboutHero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/weights-from-five-twenty-five.jpg);
+}
+
+.SuccessHero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/strong-ladies_1920.jpg);
+}
+
+.BootcampHero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/women-in-a-row-plank-pose_1920.jpg);
+}
+
+.PTHero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/woman-barbell-press-1000w.jpg);
+}
+
+.VenueHero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/cf_training_room20190503_1200w.jpg);
+}
